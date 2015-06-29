@@ -281,6 +281,18 @@
 	padding: 5px;
 	margin: 5px;
 }
+.caja_formulario .dia
+{
+	width: 30%;
+}
+.caja_formulario .mes
+{
+	width: 30%;
+}
+.caja_formulario .anio
+{
+	width: 30%;
+}
 .caja_formulario button
 {
 	padding: 10px 80px;
