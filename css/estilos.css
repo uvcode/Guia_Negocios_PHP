@@ -251,11 +251,15 @@
 
 .contenido .formulario
 {
-	text-align: center;	
+	text-align: center;
+
 }
 .contenido .formulario .formulario_in
 {
 	text-align: center;
+	width: 50%;
+	border: 2px dashed black;
+	display: inline-block;
 }
 .caja_formulario
 {
