@@ -46,7 +46,7 @@
 			$(this).each(function() {
 				images[settings.setIndex]['displayAsALink'] = settings.displayAsALink;
 				images[settings.setIndex][index]            = [];
-				images[settings.setIndex][index]['adress']  = isSet($(this).attr('href'), ' ');
+				images[settings.setIndex][index]['address']  = isSet($(this).attr('href'), ' ');
 				images[settings.setIndex][index]['caption'] = isSet($(this).attr('title'), ' ');
 				if(!settings.displayAsALink){
 					$(this).unbind('click').bind('click', {
@@ -151,12 +151,12 @@
 			$('#Choco_loading').fadeIn(settings.fadeInImageduration);
 			var imgPreloader = new Image();
 			imgPreloader.onload = function(){
-				$('#Choco_bigImage').attr('src',images[settings.setIndex][settings.currentImage]['adress']);
+				$('#Choco_bigImage').attr('src',images[settings.setIndex][settings.currentImage]['address']);
 				var ajustees = iWantThePerfectImageSize(imgPreloader.height,imgPreloader.width);
 				ChoColat(ajustees['hauteur'],ajustees['largeur'],resize);
 				$('#Choco_loading').stop().fadeOut(settings.fadeOutImageduration);
 			};
-			imgPreloader.src = images[settings.setIndex][settings.currentImage]['adress'];
+			imgPreloader.src = images[settings.setIndex][settings.currentImage]['address'];
 			preload();
 			upadteDescription();
 		}
@@ -226,7 +226,7 @@
 			if(settings.currentImage !== settings.lastImage){
 				i = new Image;
 				z = settings.currentImage + 1;
-				i.src = images[settings.setIndex][z]['adress'];
+				i.src = images[settings.setIndex][z]['address'];
 			}
 		}
 		function upadteDescription(){
